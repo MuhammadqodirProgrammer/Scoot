@@ -2,10 +2,34 @@
 
 .header_container{
     padding: 22px 0;
-    width: 1106px;
+    max-width: 1106px;
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    @include tablet(){
+        max-width: 900px;
+        padding: 22px 10px;
+    }
+    @include mobile(){
+        .mobile-burger{
+            position: absolute;
+            left: 30px;
+
+        }
+        max-width: 767px;
+        justify-content: center;
+    }
+   
+}
+#menu{
+    appearance: none;
+    position: absolute;
+}
+.mobile-burger{
+    display: none;
+    @include mobile(){
+        display: block;
+    }
 }
 .header__nav, .header__nav-list {
     display: flex;
@@ -13,30 +37,85 @@ align-items: center
 }
 .header__nav{
     gap: 58px;
+    @include mobile(){
+        // position: relative;
+    }
 }
 .header__nav-list{
     gap: 32px;
+    @include mobile(){
+        display: block;
+        position: absolute;
+        background: #333A44;
+        color: white;
+        top: 78px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        gap: 40px;
+        left: 0;
+        height: 645px;
+        width: 70%;
+        transform: translateX(-100%);
+        transition: all 0.5s ease ;
+        z-index: 30;
+    }
+    // #menu:checked ~ .header__nav .header__nav-list{
+    // transform: translateX(100%);
+    // }
+}
+#menu:checked ~ .header__nav .header__nav-list{
+    transform: translateX(0);
+
+    }
+.mobile-btn{
+    display: none;
+    @include mobile(){
+        // position: absolute;
+        // bottom: 24px;
+        margin-top: 150px;
+        display: block;
+        
+    }
 }
 .logo{
     display: block;
     width: 107.82px;
+    @include mobile(){
+        margin: 0 auto;
+        justify-content: center;
+    }
 }
 
-.header__nav-list-item{
+.header__nav-list-item a{
     height: 25px;
     font-family: 'Space Mono';
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
     line-height: 25px;
-    /* identical to box height, or 167% */
     color: #939CAA;
+
+    &:hover{
+        color: #FCB72B;
+    }
 }
-
-
-
-
-
 .btn{
     @include btn;
+    @include mobile(){
+        // display: none;
+        display: block;
+    }
+}
+.container{
+    @include tablet(){
+        max-width: 1024px;
+    }
+}
+.header-btn{
+    display: block;
+    @include mobile(){
+        display: none;
+      
+    }
 }

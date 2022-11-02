@@ -1,0 +1,127 @@
+// our_servise
+
+.bg-mixins1{
+    @include servise("../imgs/Combined.png")
+}
+.bg-mixins2{
+    @include servise("../imgs/001-scooter.png")
+}
+.bg-mixins3{
+    @include servise("../imgs/comdiinend2.png")
+}
+h2{
+    height: 28px;
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+/* identical to box height, or 117% */
+letter-spacing: -1.07143px;
+color: #495567;
+margin-bottom: 27px;
+@include mobile(){
+    // width: 300px;
+    text-align: center;
+    margin: 24px 0;
+}
+
+}
+.tablet_span{
+    display: none;
+    @include mobile(){
+        display: inline-block;
+        margin-bottom: 24px;
+        // text-align: center;
+        margin: 0 auto;
+        }
+}
+
+.our__servise_img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 284px;
+    margin-bottom: 40px;
+    @include tablet() {
+        position: relative;
+        flex-direction: column;  
+        align-items: center; 
+        gap: 80px;     
+            }
+            @include mobile(){
+                display: none;
+            }
+}
+
+.our__servise_cards{
+    display: flex;
+    gap: 30px;
+    @include tablet() {
+flex-direction: column;        
+    }
+    @include mobile{
+        margin: 0 auto;
+        
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.card{
+    @include mobile{
+text-align: center;        
+       
+    }
+
+    p{
+
+        width: 350px;
+        height: 100px;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        /* or 167% */
+        color: #939CAA;
+        @include mobile{
+            text-align: center;        
+                   
+                }
+    }
+}
+.our__servise{
+    position: relative;
+    margin-top: 160px;
+    padding: 0px 165px;
+    @include tablet() {
+display: flex;
+gap: 79px;
+padding: 0px 97px;
+
+    }
+    @include mobile(){
+        padding: 0 32px;
+        padding-top: 20px;
+    }
+}
+.line_servise{
+    position: absolute;
+    width: 974px;
+    // height: 20px;
+height: 0px;
+left: 0;
+background-color: #E5ECF4;
+border: 8px solid #E5ECF4;
+z-index: -1;
+@include tablet() {
+    flex-direction: column; 
+    position: center;
+    width: 1px;
+    // height: 20px;
+height: 513px;
+border: 8px solid #E5ECF4;
+top: -160px;  
+left: 40px;
+        }
+}

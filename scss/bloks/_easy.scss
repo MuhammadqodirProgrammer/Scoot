@@ -1,0 +1,227 @@
+// easy sections
+
+.easy{
+    margin-top: 200px;
+    overflow: hidden;
+    @include tablet() {
+margin-top: 145px;
+    }
+    @include mobile() {
+        margin-top: 120px;
+            }
+}
+
+.easy__boxs{
+    max-width: 1106px;
+    margin: 0 auto;
+}
+
+.easy__boxs-box{
+    margin-bottom: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+ 
+    @include tablet() {
+flex-direction:column-reverse;  
+margin-bottom: 128px;  
+gap: 56px;    
+    }
+    @include mobile() {
+        flex-direction:column-reverse;  
+        margin-bottom: 120px;  
+        gap: 56px;    
+            }
+
+}
+.easy-tablet{
+    @include tablet() {
+        flex-direction:column;  
+            }
+            @include mobile() {
+                flex-direction:column;  
+                    }
+}
+.easy_img{
+    position: relative;
+
+}
+.easy_img img:first-child{
+    @include mobile() {
+        width: 311px;
+     }
+}
+
+.easy_text{
+    @include tablet() {
+        text-align: center;
+            }
+         @include mobile() {
+            text-align: center;
+         }
+    h3{
+        width: 445px;
+height: 96px;
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+/* or 100% */
+letter-spacing: -2.14286px;
+color: #495567;
+margin-bottom: 17px;
+@include mobile(){
+    width: 311px;
+}
+
+    }
+    p{
+        width: 445px;
+height: 100px;
+font-family: 'Lexend Deca';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+/* or 167% */
+color: #939CAA;
+margin-bottom: 47px;
+@include mobile(){
+    width: 311px;
+}
+    }
+}
+
+.strelka_gerl{
+    position: absolute;
+    right: -170px;
+    bottom:  0;
+    @include tablet() {
+       right: -300px;     
+            }
+@include mobile(){
+    height: 100px;
+}
+}
+
+.strelka_gerl2{
+    position: absolute;
+    right: -170px;
+    top:  85px;
+}
+
+.cercle{
+    width: 445px;
+height: 445px;
+background: #E5ECF4;
+border-radius: 50%;
+position: absolute;
+// right: -50%;
+transform: translateX(15%);
+z-index: -1;
+@include tablet() {
+transform: translateX(25%);
+       
+        }
+        @include mobile() {
+            display: none;
+         }
+}
+
+.strelka_sity{
+    left: -168px;
+    position: absolute;
+top: 0;
+
+
+}
+
+.cercle2{
+    width: 445px;
+    height: 445px;
+    background: #E5ECF4;
+    border-radius: 50%;
+    position: absolute;
+    // left: -365px;
+    left: -115%;
+    // right: -50%;
+    // transform: translateX(-15%);
+    z-index: -1;
+    @include tablet() {
+    left: -125%;
+   }
+   @include mobile() {
+    display: none;
+ }
+}
+.easy_text .btn{
+    display: inline-block;
+}
+
+
+
+
+// singup section
+
+.singup_container{
+    height: 300px;
+    background: #495567;
+    background-image: url(../imgs/singupscoot.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.downlode{
+    margin: 0 auto;
+    max-width: 1106px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 102px;
+    @include tablet(){
+        flex-direction: column;
+        text-align: center;
+        margin-top: 32px;
+        gap: 40px;
+    }
+    @include mobile(){
+        flex-direction: column;
+        text-align: center;
+        margin-top: 32px;
+        gap: 40px;
+    }
+    h4{
+        max-width: 415px;
+    // height: 96px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    /* or 100% */
+    letter-spacing: 2.14286px;
+    color: #FFFFFF;
+    }
+    @include mobile(){
+        font-weight: 700;
+font-size: 32px;
+line-height: 32px;
+text-align: center;
+letter-spacing: -1.42857px;
+    }
+    
+}
+.apps{
+    display: flex;
+    gap: 18px;
+
+}
+.apps a img{
+    @include mobile(){
+        height: 40px;
+    }
+}
+
+

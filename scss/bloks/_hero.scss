@@ -1,0 +1,146 @@
+// hero section
+.hero_container {
+    background-image: url(../imgs/scoothero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    height: 650px;
+    padding-top: 150px;
+
+    @include tablet() {
+        // display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    @include mobile() {
+        // display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+    }
+}
+
+.hero-paragrf {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+h1 {
+    padding-left: 165px;
+    // padding-top: 153px;
+    // width: 610px;
+    margin: 0 auto;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    /* or 100% */
+    letter-spacing: 2.5px;
+    color: #FFFFFF;
+
+    @include tablet() {
+        padding-left: 0;
+        padding-top: -45px;
+        margin-bottom: 40px;
+        text-align-last: center;
+    }
+
+    @include mobile() {
+        font-size: 40px;
+line-height: 40px;
+letter-spacing: 1.78571px;
+        width: 311px;
+        padding-left: 0;
+        text-align: center;
+    }
+ br{
+    @include mobile() {
+      display: none;
+    } 
+ }
+}
+
+.yellow-line {
+    @include tablet() {
+        display: none;
+    }
+
+    @include mobile() {
+        display: none;
+    }
+}
+
+.yellow-line-right {
+    @include tablet() {
+        position: absolute;
+        left: 0;
+        bottom: 95px;
+    }
+
+    @include mobile() {
+        position: absolute;
+        left: -310px;
+        bottom: 95px;
+    }
+
+}
+
+.hero-paragrf {
+    p {
+        width: 369px;
+        min-height: 80px;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        /* or 167% */
+        color: #FFFFFF;
+        // margin-bottom: 40px;
+        margin: 50px 0;
+        // gap: 30px;
+        margin-left: 17px;
+
+        @include tablet() {
+
+            margin-left: 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        @include mobile() {
+            text-align: center;
+            width: 311px;
+            margin-left: 0;
+            margin: 20px 0 ;
+            height: 125px;
+        }
+    }
+}
+
+.hero-paragrf img:last-child {
+    transform: translateY(65px);
+}
+
+.hero-btn {
+    margin-left: 260px;
+
+    @include tablet() {
+        margin-top: 32px;
+        margin-left: 0;
+    }
+
+    @include mobile() {
+        // margin-top: 32px;
+        margin-left: 0;
+    }
+}

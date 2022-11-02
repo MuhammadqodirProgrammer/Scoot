@@ -1,6 +1,6 @@
 @mixin btn {
     padding: 8px 30px;
-    border: 5px solid #fcb72b;
+    border: 3px solid #FCB72B;
     color: #fff;
     background-color: #fcb72b;
     transition: all 0.7s ease;
@@ -9,4 +9,40 @@
         color:#fcb72b;
         padding: 8px 30px;
     }
+}
+
+@mixin tablet() {
+    @media (min-width:768px) and (max-width:1024px) 
+    {
+        
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media (min-width:315px) and (max-width:767px)
+    {
+        
+        @content;
+    }
+}
+
+@mixin recponsive() {
+    @media (min-width:$min-width) and (max-width:$max-width) {
+        @content;
+    }
+    min-width: $min-width; 
+    max-width: $max-width; 
+}
+
+@mixin servise($bg-img) {
+    min-width: 96px;
+min-height: 96px;
+background: #FCB72B;
+border-radius: 50%;
+background-image: url($bg-img);
+background-position: center;
+background-repeat: no-repeat;
+
+display: inline-block;
 }
