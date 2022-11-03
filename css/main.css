@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Space Mono";
+  src: url("../fonts/SpaceMono-Bold.woff2") format("woff2"), url("../fonts/SpaceMono-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("../fonts/SpaceMono-Regular.woff2") format("woff2"), url("../fonts/SpaceMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("../fonts/LexendDeca-Regular.woff2") format("woff2"), url("../fonts/LexendDeca-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +41,13 @@ a {
 
 ul li {
   list-style: none;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header_container {
@@ -163,7 +191,7 @@ ul li {
 }
 
 .hero_container {
-  background-image: url(../imgs/scoothero.png);
+  background-image: url(../imgs/scoothero.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
@@ -425,6 +453,11 @@ h2 {
 }
 @media (min-width: 315px) and (max-width: 767px) {
   .card p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    width: 311px;
     text-align: center;
   }
 }
@@ -557,6 +590,10 @@ h2 {
 @media (min-width: 315px) and (max-width: 767px) {
   .easy_text h3 {
     width: 311px;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -1.42857px;
   }
 }
 .easy_text p {
@@ -574,6 +611,14 @@ h2 {
 @media (min-width: 315px) and (max-width: 767px) {
   .easy_text p {
     width: 311px;
+    height: 150px;
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    text-align: center;
   }
 }
 
@@ -689,7 +734,7 @@ h2 {
   font-size: 48px;
   line-height: 50px;
   /* or 100% */
-  letter-spacing: 2.14286px;
+  letter-spacing: -2.14286px;
   color: #FFFFFF;
 }
 @media (min-width: 315px) and (max-width: 767px) {
@@ -777,4 +822,14 @@ h2 {
 .social-networks {
   display: flex;
   gap: 24px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: #FCB72B;
+}
+
+.icon:hover {
+  fill: #E5ECF4;
 }/*# sourceMappingURL=main.css.map */

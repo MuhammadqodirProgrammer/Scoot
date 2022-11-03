@@ -84,9 +84,13 @@ text-align: center;
         line-height: 25px;
         /* or 167% */
         color: #939CAA;
-        @include mobile{
-            text-align: center;        
-                   
+        @include mobile{     
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            /* or 167% */
+            width: 311px;
+            text-align: center; 
                 }
     }
 }

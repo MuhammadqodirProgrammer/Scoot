@@ -74,6 +74,10 @@ color: #495567;
 margin-bottom: 17px;
 @include mobile(){
     width: 311px;
+    font-size: 32px;
+line-height: 32px;
+text-align: center;
+letter-spacing: -1.42857px;
 }
 
     }
@@ -90,6 +94,14 @@ color: #939CAA;
 margin-bottom: 47px;
 @include mobile(){
     width: 311px;
+height: 150px;
+font-family: 'Lexend Deca';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+/* or 167% */
+text-align: center;
 }
     }
 }
@@ -201,7 +213,7 @@ top: 0;
     font-size: 48px;
     line-height: 50px;
     /* or 100% */
-    letter-spacing: 2.14286px;
+    letter-spacing: -2.14286px;
     color: #FFFFFF;
     }
     @include mobile(){
